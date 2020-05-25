@@ -76,6 +76,7 @@ header {
   color: red;
   font-style: italic;
 }
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -120,6 +121,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  word-wrap: break-word
 }
 
 @media (max-width: 690px) {
