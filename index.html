@@ -21,14 +21,19 @@
       </div>
 
       <div class="card-body">
-        <span class="error-message" id="checkBoxError"></span>
-        <br>
+        <!-- Throws an error if no box is checked, otherwise does nothing-->
+        <span class="error-message" id="checkBoxError"></span><br>
 
+        <!-- Checkboxes for the different types of characters which trigger if statements within the "generate" function -->
         Uppercase: <input type="checkbox" id="uppercaseCheck"><br>
         Lowercase: <input type="checkbox" id="lowercaseCheck"><br>
         Numbers: <input type="checkbox" id="numbersCheck"><br>
         Special: <input type="checkbox" id="specialCheck"><br>
+
+        <!-- Input box for text length, passes input through parseInt to generate function -->
         Password Length: <input type="text" id="passwordLength" name="example" />
+    
+        <!-- Throws an error if input is not a number, or is outside the specified range, otherwise does nothing -->
         <span class="error-message" id="passwordLengthError"></span><br>
 
         <div id="password">
